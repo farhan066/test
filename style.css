@@ -16,7 +16,7 @@ body {
     color: #fff;
 }
 section{
-    padding: 20px 40px;
+    padding: 20px;
 }
 #hero{
     min-height: 100vh;
@@ -36,11 +36,12 @@ section{
 }
 .red_text{
     color: #ff7474;
-    font-size: 60px;
+    font-size: 50px;
     margin-bottom: -10px;
+    letter-spacing: -1px;
 }
 .white_text{
-    font-size: 30px;
+    font-size: 20px;
 }
 .hero_bottom{
     position: absolute;
@@ -60,6 +61,16 @@ section{
     font-size: 16px;
     letter-spacing: 1px;
 }
+@media(max-width:500px){
+    .hero_bottom{
+        flex-direction: column;
+        align-items: start;
+    }
+    .hero_bottom_name{
+        margin-top: 20px;
+    }
+}
+
 #about{
     min-height: 100vh;
     display: flex;
@@ -75,4 +86,13 @@ section{
     font-size: 30px;
     margin-top: 10px;
     font-family: sans-serif;
+}
+
+@media(max-width:500px){
+    .heading{
+        font-size: 35px;
+    }
+    .about_text{
+        font-size: 20px;
+    }    
 }
