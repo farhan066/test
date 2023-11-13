@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'main';
+    src: url('./mainfont/BigShouldersDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'main', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+section{
+    padding: 20px 40px;
+}
+#hero{
+    min-height: 100vh;
+    background: url('red-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+.center_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.red_text{
+    color: #ff7474;
+    font-size: 60px;
+    margin-bottom: -10px;
+}
+.white_text{
+    font-size: 30px;
+}
+.hero_bottom{
+    position: absolute;
+    padding: 0 40px 30px 40px;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 12px;
+}
+.random_text{
+    max-width: 300px;
+    letter-spacing: .5px;
+}
+.hero_bottom_name{
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+#about{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.heading{
+    font-size: 40px;
+}
+.about_text{
+    max-width: 800px;
+    color: #c9c9c9;
+    font-size: 30px;
+    margin-top: 10px;
+    font-family: sans-serif;
+}
